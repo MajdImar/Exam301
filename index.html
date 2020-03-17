@@ -6,7 +6,45 @@
     <title>Document</title>
 </head>
 <body>
- <script src="./js/q1.js"></script>   
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <main>
+        <p id="demo"></p>
+
+<script>
+var d = new Date();
+var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+document.getElementById("demo").innerHTML = months[d.getMonth()];
+</script>
+
+            
+        <form id="todo">
+            <fieldset>
+                <label for="list">What do you want to get done today?</label>  <br>
+            <input type="text" id="choose" required placeholder="studying,reading,dancing ..."> <br>
+            <label for="date" >Date:</label> <br>
+            <input type="date" id="ddate">  <br>
+            <input type="submit">
+            </fieldset>
+        </form>
+    </main>
+    <footer></footer>
+
+
+
+
+
+
+
+ <!-- <script src="./js/q1.js"></script>   -->
+ <script src="./js/q2.js"></script>
+ <script src="./js/q3.js"></script>
+
+
+
+
+
  <!-- omg I forgot how to link js file in html lol -->
 </body>
 </html>
